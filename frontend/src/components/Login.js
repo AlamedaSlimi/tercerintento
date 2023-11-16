@@ -19,7 +19,7 @@ function Login({ setIsLogin }) {
   const registerSubmit = async e => {
     e.preventDefault()
     try {
-      const res = await axios.post('/user/register', {
+      const res = await axios.post('https://mern-stacksd-backend.onrender.com/user/register', {
         username: user.name,
         email: user.email,
         password: user.password
@@ -36,7 +36,7 @@ function Login({ setIsLogin }) {
   const loginSubmit = async e => {
     e.preventDefault()
     try {
-      const res = await axios.post('/user/login', {
+      const res = await axios.post('https://mern-stacksd-backend.onrender.com/user/login', {
         email: user.email,
         password: user.password
       })
