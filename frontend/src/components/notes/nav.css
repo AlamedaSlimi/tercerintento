@@ -5,13 +5,13 @@
   padding: 0px 20px;
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: green;
 }
 a{
   text-decoration: none;
 }
 .menu {
     height: 100%;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,5 +47,5 @@ ul li a{
 }
 
 ul li:hover>a {
-  background-color: gray;
+  background-color: #f0f0f0;
 }
