@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cors())
 
 //Routes
-app.use('/users',userRouter)
+app.use('/user',userRouter)
 app.use('/api/notes',nodeRouter)
 
 
