@@ -12,7 +12,7 @@ function App() {
     const checkLogin = async () => {
       const token = localStorage.getItem('tokenStore')
       if (token) {
-        const verified = await axios.get('/user/verify', {
+        const verified = await axios.get('/users/verify', {
           headers: { Authorization: token }
         })
         setIsLogin(verified.data)
