@@ -42,12 +42,10 @@ ul li a{
     text-transform: capitalize;
   color: #303030;
   transition: 0.1s;
-  padding: 20px 40px;
+  padding: 10px 40px;
   background: blue;
 }
 
 ul li:hover>a {
-  transform-origin: left;
-  color: #0b6c37;
-  transition: 0.1s;
+  background-color: gray;
 }
