@@ -11,7 +11,6 @@ a{
 }
 .menu {
     height: 100%;
-    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +40,7 @@ ul li a{
     text-transform: capitalize;
   color: #303030;
   transition: 0.1s;
-  padding: 10px 40px;
+  padding: 5px 15px;
 }
 
 ul li:hover>a {
