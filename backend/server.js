@@ -19,6 +19,8 @@ app.use('/api/notes',nodeRouter)
 
 //connection
 const URI = process.env.DATABASE
+    ? process.env.DATABASE
+    : 'mongodb://localhost/test';
 mongoose.connect(URI,err=>{
     if(err) throw err;
     console.log('connecte to mongodb')
