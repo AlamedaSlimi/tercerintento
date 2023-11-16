@@ -11,7 +11,7 @@ function Home() {
 
     const getNotes = async (token) => {
         console.log(token)
-        const res = await axios.get('api/notes', {
+        const res = await axios.get('https://notesappla.onrender.com/api/notes', {
             headers: { Authorization: token }
         })
         console.log(res)
@@ -32,7 +32,7 @@ function Home() {
 const deleteNote = async(id)=>{
     try {
         if(token){
-            await axios.delete(`/api/notes/${id}`,{
+            await axios.delete(`https://notesappla.onrender.com/api/notes/${id}`,{
                 headers:{Authorization:token}
             })
             getNotes(token)
