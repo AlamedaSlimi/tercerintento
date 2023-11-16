@@ -20,7 +20,7 @@ a{
   margin-left: 2rem;
   font-size: 2.5rem;
   font-weight: 400;
-  background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
+  color: #303030;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -33,19 +33,19 @@ a{
   padding: 2.5rem;
   font-size: 25px;
   cursor: pointer;
-  color: #3500D3;
-  transition: 0.5s;
+  color: #303030;
+  transition: 0.1s;
   
 }
 
 ul li a{
     text-transform: capitalize;
-  color: #3500D3;
-  transition: 0.5s;
+  color: #303030;
+  transition: 0.1s;
 }
 
 ul li:hover>a {
   transform-origin: left;
-  color: #5CDB95;
-  transition: 0.5s;
+  color: #0b6c37;
+  transition: 0.1s;
 }
