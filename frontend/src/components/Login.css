@@ -1,5 +1,5 @@
 .login-page {
-  height: 792px;
+  min-height: 100vh;
   font-family: sans-serif;
   background: #f0f0f0;
 }
@@ -8,7 +8,6 @@
   display: flex;
   margin-left: 20rem;
   font-weight: 400;
-  background: #e1e1e1;
 }
 
 
