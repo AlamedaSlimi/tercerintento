@@ -5,6 +5,7 @@
   padding: 0px 20px;
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: green;
 }
 a{
   text-decoration: none;
@@ -15,6 +16,7 @@ a{
     justify-content: center;
     position: relative;
     list-style: none;
+    background-color: yellow;
 }
 .logo h2 {
   margin-left: 2rem;
