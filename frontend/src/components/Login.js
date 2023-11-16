@@ -19,7 +19,7 @@ function Login({ setIsLogin }) {
   const registerSubmit = async e => {
     e.preventDefault()
     try {
-      const res = await axios.post('https://notesappla.onrender.com/users/register', {
+      const res = await axios.post('https://notesappla.onrender.com/user/register', {
         username: user.name,
         email: user.email,
         password: user.password
