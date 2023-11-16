@@ -11,12 +11,11 @@ a{
 }
 .menu {
     height: 100%;
-    width: 600px;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    background-color: yellow;
 }
 .logo h2 {
   margin-left: 2rem;
@@ -43,7 +42,6 @@ ul li a{
   color: #303030;
   transition: 0.1s;
   padding: 10px 40px;
-  background: blue;
 }
 
 ul li:hover>a {
