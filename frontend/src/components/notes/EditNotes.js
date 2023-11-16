@@ -20,7 +20,7 @@ function EditNote() {
     const getNote = async () => {
       const token = localStorage.getItem('tokenStore')
       if (id) {
-        const res = await axios.get(`/api/notes/${id}`, {
+        const res = await axios.get(`https://notesappla.onrender.com/api/notes/${id}`, {
           headers: { Authorization: token }
         })
      setNote({
