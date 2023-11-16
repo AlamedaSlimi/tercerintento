@@ -1,9 +1,7 @@
 .login-page {
   height: 792px;
   font-family: sans-serif;
-  background: #12c2e9;
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: #f0f0f0;
 }
 
 .login-signup {
