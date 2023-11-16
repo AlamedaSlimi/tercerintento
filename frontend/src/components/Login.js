@@ -65,32 +65,25 @@ function Login({ setIsLogin }) {
       <div className="inner">
         <form onSubmit={loginSubmit}>
 
-          <h3>Log in</h3>
+          <h3>Iniciar sesion</h3>
 
           <div className="form-group">
-            <label>Email</label>
-            <input type="email" className="form-control" placeholder="Enter email" name='email'
+            <label>Correo electronico</label>
+            <input type="email" className="form-control" placeholder="Introduce tu email" name='email'
              required value={user.email} onChange={onChangeInput} />
           </div>
 
           <div className="form-group">
-            <label>Password</label>
-            <input type="password" className="form-control" placeholder="Enter password" name='password'
+            <label>Contraseña</label>
+            <input type="password" className="form-control" placeholder="Introduce tu contraseña" name='password'
              required value={user.password} onChange={onChangeInput}  />
           </div>
 
-          <div className="form-group">
-            <div className="custom-control custom-checkbox">
-              <input type="checkbox" className="custom-control-input" id="customCheck1" />
-              <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-            </div>
-          </div>
-
           <div class="d-grid gap-2">
-              <button class="btn btn-primary" type="submit">Sign In</button>
+              <button class="btn btn-primary" type="submit">Iniciar sesion</button>
             </div>
             <p className="next_page">
-            You don't have an account? <span onClick={()=>setOnLogin(true)}>Register now</span>
+            ¿No tienes una cuenta? <span onClick={()=>setOnLogin(true)}>Registrate aqui</span>
             </p>
           <h4>{err}</h4>
         </form>
