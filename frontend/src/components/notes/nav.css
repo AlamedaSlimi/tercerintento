@@ -10,11 +10,12 @@ a{
   text-decoration: none;
 }
 .menu {
-    height: 80px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding-top: 5px;
 }
 .logo h2 {
   margin-left: 2rem;
@@ -28,7 +29,6 @@ a{
 
 .menu_item{
   list-style: none;
-  padding: 2.5rem;
   font-size: 25px;
   cursor: pointer;
   color: #303030;
