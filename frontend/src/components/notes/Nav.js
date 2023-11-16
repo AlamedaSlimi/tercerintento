@@ -13,7 +13,7 @@ function Nav({ setIsLogin }) {
   return (
     <nav className='main-nav'>
       <div className="logo">
-        <img src="NoteDown-1.png" alt="">
+        <h2>Note App</h2>
       </div>
         <ul className='menu'>
           <li className='menu_item'><Link to="/">Inicio</Link></li>
