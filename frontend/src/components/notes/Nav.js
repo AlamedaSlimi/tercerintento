@@ -14,15 +14,14 @@ function Nav({ setIsLogin }) {
     <nav className='main-nav'>
       <div className="logo">
         <h2>
-          <span>N</span>ote
-          <span>D</span>own
+          Note App
         </h2>
       </div>
         <ul className='menu'>
-          <li className='menu_item'><Link to="/">Home</Link></li>
-          <li className='menu_item'><Link to="/create">CreatNote</Link></li>
-          <li className='menu_item'><Link to="/about">About Us</Link></li>
-            <li className=" menu_item" onClick={logoutSubmit}><Link to="/">Logout</Link></li>
+          <li className='menu_item'><Link to="/">Inicio</Link></li>
+          <li className='menu_item'><Link to="/create">Crear nota</Link></li>
+          <li className='menu_item'><Link to="/about">Generar frase</Link></li>
+            <li className=" menu_item" onClick={logoutSubmit}><Link to="/">Salir</Link></li>
       </ul>
     </nav>
   )
