@@ -2,10 +2,12 @@
     width: 100%;
     box-shadow: 0 0 5px rgb(7,25,63);
     padding: 20px 0;
+    background: blue;
   }
   .note-wrapper{
     max-width: 1920px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+      background: red;
   }
