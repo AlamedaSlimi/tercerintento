@@ -29,7 +29,7 @@ function CreateNotes() {
           title,content, date
         }
 
-        await axios.post('/api/notes',newNote,{
+        await axios.post('https://notesappla.onrender.com/api/notes',newNote,{
           headers:{Authorization:token}
         })
 
