@@ -69,32 +69,32 @@ function EditNote() {
 
   return (
     <div className="create-note">
-      <h2>Edit note</h2>
+      <h2>Editar nota</h2>
 
       <form onSubmit={editNote} autoComplete='off'>
         <div className="row">
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">Titulo</label>
           <input type="text" id='title' name="title"
             value={note.title} required onChange={onChaneInput}
           />
         </div>
 
         <div className="row">
-          <label htmlFor="content">Content</label>
+          <label htmlFor="content">Texto</label>
           <textarea cols="30" rows="10" type="textarea" id='content' name="content"
             value={note.content} required
             onChange={onChaneInput}
           />
         </div>
 
-        <label htmlFor="date">Date:{note.date}</label>
+        <label htmlFor="date">Fecha</label>
         <div className="row">
           <input type="date" id='date' name="date"
          onChange={onChaneInput}
           />
         </div>
 
-        <button type='submit'>save</button>
+        <button type='submit'>GUARDAR</button>
       </form>
     </div>
   )
