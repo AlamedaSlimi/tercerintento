@@ -12,7 +12,7 @@ function App() {
     const checkLogin = async () => {
       const token = localStorage.getItem('tokenStore')
       if (token) {
-        const verified = await axios.get('https://notesappla.onrender.com/user/verify', {
+        const verified = await axios.get('/user/verify', {
           headers: { Authorization: token }
         })
         setIsLogin(verified.data)
@@ -27,9 +27,9 @@ function App() {
   return (
     <div className="App">
       {
-        isLogin ?
-          <Notes setIsLogin={setIsLogin} /> :
-          <Login setIsLogin={setIsLogin} />
+        isLogin 
+        ?  <Notes setIsLogin={setIsLogin} /> :
+        :  <Login setIsLogin={setIsLogin} />
       }
 
     </div>
