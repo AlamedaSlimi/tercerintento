@@ -9,6 +9,9 @@ function Home() {
     const [notes, setNotes] = useState([]);
     const [token, setToken] = useState('')
 
+    const [quote, setQuote] = useState("");
+    const [author, setAuthor] = useState("");
+
     const getNotes = async (token) => {
         console.log(token)
         const res = await axios.get('https://notesappla.onrender.com/api/notes', {
@@ -28,6 +31,17 @@ function Home() {
         }
 
     }, [])
+
+let fetchNewQuote = () => {
+    fetch("https://api.quotable.io/random")
+      .then(res => res.json())
+      .then(
+        (quote) => {
+          setQuote(quote.content);  
+          setAuthor(quote.author);
+        }
+      )
+  }
 
 const deleteNote = async(id)=>{
     try {
