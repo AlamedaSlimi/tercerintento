@@ -59,9 +59,9 @@ const deleteNote = async(id)=>{
                         <p className='date'>{format(note.date)}</p>
                         <div className="card-footer">
                             {note.name}
-                            <Link to={`edit/${note._id}`}> Edit</Link>
+                            <Link to={`edit/${note._id}`}> Editar</Link>
+                            <button className='close' onClick={()=>deleteNote(note._id)} >BORRAR</button>
                         </div>
-                        <button className='close' onClick={()=>deleteNote(note._id)} >X</button>
                     </div>
                 ))
             }
