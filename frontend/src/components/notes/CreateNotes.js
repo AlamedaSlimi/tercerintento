@@ -46,32 +46,32 @@ function CreateNotes() {
 
   return (
     <div className="create-note">
-      <h2>Create note</h2>
+      <h2>Crear nota</h2>
 
       <form onSubmit={createNote} autoComplete='off'>
         <div className="row">
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">Titulo</label>
           <input type="text" id='title' name="title"
             value={note.title} required onChange={onChaneInput}
           />
         </div>
 
         <div className="row">
-          <label htmlFor="content">Content</label>
+          <label htmlFor="content">Texto</label>
           <textarea cols="30" rows="10" type="textarea" id='content'  name="content"
             value={note.content} required
             onChange={onChaneInput}
           ></textarea>
         </div>
 
-        <label htmlFor="date">Date:{note.date}</label>
+        <label htmlFor="date">Fecha</label>
         <div className="row">
           <input type="date" id='date' name="date"
              onChange={onChaneInput}
           />
         </div>
 
-        <button type='submit'>Save</button>
+        <button type='submit'>GUARDAR</button>
       </form>
     </div>
   )
