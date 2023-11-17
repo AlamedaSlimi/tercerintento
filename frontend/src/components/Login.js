@@ -133,7 +133,7 @@ function Login({ setIsLogin }) {
             </div>
             <div className="form-group">
               <label>Correo electronico</label>
-              <input type="email" className="form-control" placeholder="Introduce tu email:" name='email'
+              <input type="email" className="form-control" placeholder="Introduce tu email (e.g. Hussein@gmail):" name='email'
                value={user.email} required onChange={onChangeInput} />
             </div>
 
