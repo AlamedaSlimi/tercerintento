@@ -124,30 +124,30 @@ function Login({ setIsLogin }) {
       <div className="outer" style={style}>
         <div className="inner">
           <form onSubmit={registerSubmit}>
-            <h3>Register</h3>
+            <h3>Registrarse</h3>
 
             <div className="form-group">
-              <label>Full Name</label>
-              <input type="text" className="form-control"  placeholder="Full Name" name='name'
+              <label>Nombre</label>
+              <input type="text" className="form-control"  placeholder="Introduce tu nombre:" name='name'
                required  value={user.name} onChange={onChangeInput} />
             </div>
             <div className="form-group">
-              <label>Email</label>
-              <input type="email" className="form-control" placeholder="Enter email" name='email'
+              <label>Correo electronico</label>
+              <input type="email" className="form-control" placeholder="Introduce tu email:" name='email'
                value={user.email} required onChange={onChangeInput} />
             </div>
 
             <div className="form-group">
-              <label>Password</label>
-              <input type="password" className="form-control" placeholder="Enter password" name='password'
+              <label>Contraseña</label>
+              <input type="password" className="form-control" placeholder="Introduce tu contraseña:" name='password'
               value={user.password} required  onChange={onChangeInput}  />
             </div>
 
             <div class="d-grid gap-2">
-              <button class="btn btn-primary" type="submit">Register</button>
+              <button class="btn btn-primary" type="submit">Registrarse</button>
             </div>
             <p className="next_page">
-            You have an account? <span onClick={()=>setOnLogin(false)} >Login Now</span>
+            ¿Ya tienes una cuenta? <span onClick={()=>setOnLogin(false)} >Inicia sesion</span>
             </p>
             <h4 >{err}</h4>
           </form>
@@ -155,7 +155,7 @@ function Login({ setIsLogin }) {
       </div>
       </div>
                 
-      <div className="App">
+      <div className="quoteApi">
         <div className="quote">
           <h2>{quote}</h2>
           <small>-{author}-</small>
