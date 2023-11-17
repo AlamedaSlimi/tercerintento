@@ -13,7 +13,7 @@ function Nav({ setIsLogin }) {
   return (
     <nav className='main-nav'>
       <div className="logo">
-        <h2>Note App</h2>
+        <h2>NotesApp</h2>
       </div>
         <ul className='menu'>
           <li className='menu_item'><Link to="/">Inicio</Link></li>
