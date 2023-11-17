@@ -47,6 +47,7 @@ const deleteNote = async(id)=>{
 
 
     return (
+        <section className="home-page">
         <div className="notes-wrapper">
             {
                 notes.map(note => (
@@ -66,6 +67,7 @@ const deleteNote = async(id)=>{
                 ))
             }
         </div>
+        </section>
     )
 }
 
