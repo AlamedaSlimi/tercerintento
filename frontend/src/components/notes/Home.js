@@ -66,6 +66,13 @@ const deleteNote = async(id)=>{
                 ))
             }
         </div>
+    <div className="App">
+         <div className="quote">
+            <h2>{quote}</h2>
+            <small>-{author}-</small>
+         </div><br />
+         <button className="btn" onClick={fetchNewQuote}>Generate New Quote</button>
+    </div>
     )
 }
 
