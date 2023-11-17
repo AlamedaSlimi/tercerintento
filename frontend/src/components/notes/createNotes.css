@@ -2,22 +2,27 @@
     max-width: 500px;
     width: 100%;
     margin: auto;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(167,28,171,0.8410714627647934) 99%);
+    background: white;
     padding: 30px;
     border-radius: 8px;
     margin-top: 10px;
- 
-
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 40px;
+    color: rgb(43, 43, 43);
   }
   .create-note h2{
-    letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 20px 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(201, 201, 201);
   }
   .create-note .row{
     width: 100%;
     margin: 10px 0;
+  }
+  .create-note input{
+    background: #f0f0f0;
+    border: none;
   }
   .create-note input,
   .create-note button{
@@ -30,25 +35,29 @@
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
+    margin-bottom: 10px;
   }
   .create-note textarea{
     width: 100%;
     resize: none;
     padding: 0 5px;
     border-radius: 5px;
+    background: #f0f0f0;
+    border: none;
   }
   .create-note button{
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
-    color: rgb(7,25,63);
-    background: rgba(167,28,171,0.8410714627647934);
+    color: white;
+    background: rgb(61, 169, 61);
     border: 0px;
+    margin-top: 10px;
   }
 
   .create-note button:hover{
-    background: rgb(232, 6, 198);
+    background: rgb(47, 130, 47);
   }
 
   @media (max-width: 500px){
