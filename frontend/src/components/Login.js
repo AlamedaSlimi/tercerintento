@@ -58,27 +58,7 @@ function Login({ setIsLogin }) {
     opacity: onLoging? 1:0
   }
 
-  useEffect(() => {
-    fetch("https://api.quotable.io/random")
-      .then(res => res.json())
-      .then(
-        (quote) => {
-          setQuote(quote.content);  
-          setAuthor(quote.author);
-        }
-      )
-  },[]);
 
-  let fetchNewQuote = () => {
-    fetch("https://api.quotable.io/random")
-      .then(res => res.json())
-      .then(
-        (quote) => {
-          setQuote(quote.content);  
-          setAuthor(quote.author);
-        }
-      )
-  }
 
   return (
 
