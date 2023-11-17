@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import axios from 'axios'
 import './Login.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -56,7 +56,31 @@ function Login({ setIsLogin }) {
     opacity: onLoging? 1:0
   }
 
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
+  // http://api.quotable.io/random
+  
+  useEffect(() => {
+    fetch("http://api.quotable.io/random")
+      .then(res => res.json())
+      .then(
+        (quote) => {
+          setQuote(quote.content);  
+          setAuthor(quote.author);
+        }
+      )
+  },[]);
 
+  let fetchNewQuote = () => {
+    fetch("http://api.quotable.io/random")
+      .then(res => res.json())
+      .then(
+        (quote) => {
+          setQuote(quote.content);  
+          setAuthor(quote.author);
+        }
+      )
+  }
 
   return (
 
@@ -130,7 +154,15 @@ function Login({ setIsLogin }) {
         </div>
       </div>
       </div>
-
+                
+      <div className="App">
+        <div className="quote">
+          <h2>{quote}</h2>
+          <small>-{author}-</small>
+        </div><br />
+        <button className="btn" onClick={fetchNewQuote}>Generate New Quote</button>
+      </div>
+                
     </section>
   )
 }
