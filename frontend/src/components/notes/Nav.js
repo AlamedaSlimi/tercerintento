@@ -18,7 +18,6 @@ function Nav({ setIsLogin }) {
         <ul className='menu'>
           <li className='menu_item'><Link to="/">Inicio</Link></li>
           <li className='menu_item'><Link to="/create">Crear nota</Link></li>
-          <li className='menu_item'><Link to="/about">Generar frase</Link></li>
             <li className=" menu_item" onClick={logoutSubmit}><Link to="/">Salir</Link></li>
       </ul>
     </nav>
