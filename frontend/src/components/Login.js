@@ -1,11 +1,9 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios'
 import './Login.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Login({ setIsLogin }) {
-  const [quote, setQuote] = useState("");
-  const [author, setAuthor] = useState("");
   
   const [user, setUser] = useState({
     name: " ", email: " ", password: " "
@@ -134,13 +132,6 @@ function Login({ setIsLogin }) {
       </div>
 
     </section>
-    <div className="App">
-         <div className="quote">
-            <h2>{quote}</h2>
-            <small>-{author}-</small>
-         </div><br />
-         <button className="btn" onClick={fetchNewQuote}>Generate New Quote</button>
-    </div>
   )
 }
 
