@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       {
         isLogin 
-        ?  <Notes setIsLogin={setIsLogin} /> :
+        ?  <Notes setIsLogin={setIsLogin} /> 
         :  <Login setIsLogin={setIsLogin} />
       }
 
