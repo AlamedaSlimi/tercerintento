@@ -61,7 +61,7 @@ function Login({ setIsLogin }) {
   // http://api.quotable.io/random
   
   useEffect(() => {
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
       .then(res => res.json())
       .then(
         (quote) => {
@@ -72,7 +72,7 @@ function Login({ setIsLogin }) {
   },[]);
 
   let fetchNewQuote = () => {
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
       .then(res => res.json())
       .then(
         (quote) => {
